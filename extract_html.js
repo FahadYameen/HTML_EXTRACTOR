@@ -1,3 +1,10 @@
+if(process.argv.length!=3){
+
+    console.log('invalid number of arguments')
+}
+
+else{
+
 URL_PATH = process.argv[2]
 OUTPUT_PATH = process.argv[3]
 
@@ -6,6 +13,8 @@ const puppeteer = require('puppeteer');
 var mkdirp = require('mkdirp');
 let Data = fs.readFileSync(URL_PATH);
 let jsonData = JSON.parse(Data);
+
+
 
 
 
@@ -70,8 +79,4 @@ try {
 catch (error) {
     console.log(error)
 }
-
-
-
-
-
+}
