@@ -1,4 +1,4 @@
-if(process.argv.length!=3){
+if(process.argv.length!=4){
 
     console.log('invalid number of arguments')
 }
